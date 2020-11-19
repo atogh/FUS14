@@ -177,9 +177,18 @@ color: #000;
   right: 0;
   width: 50%;
   height: 100vh;
-  
+  transition: all 0.6s cubic-bezier(0.66, -0.01, 0.3, 0.99);
+  -webkit-transform: translateX(105vw);
+  transform: translateX(105vw);
   
 }
+
+.app-navigation.is-active {
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+}
+
+
 
 .app-navigation .button.is-close-menu {
   position: fixed;
