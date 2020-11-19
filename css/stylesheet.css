@@ -24,6 +24,12 @@
     height: 1px;
     margin: -1px;
   }
+
+.respons{
+  max-width: 100%;
+  height: auto;
+}
+
   ::-moz-selection {
     background: #233d84;
     color: #ffffff;
@@ -59,6 +65,62 @@
     vertical-align: middle;
   }
 /* 헤더 디자인 */
-.app-header{
-  background-color:yellow;
+.app-header {
+  display: block;
+  /* background-color:yellow; */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+
+
+  position: fixed;
+  background: rgba(255, 255, 255, 0.4);
+  top: 0;
+  right: 0;
+  left: 0;
+  border-bottom: 1px solid #f5f4fb
+  
+}
+
+/* 브랜드 로고 */
+.brand {
+  /* background-color: green; */
+  margin: 0;
+  line-height: 16px;
+  padding: 32px;
+}
+
+.brand a{
+  display: block;
+
+}
+
+/* 햄버거 */
+
+.app-header .button.is-open-menu {
+  background-color: #fff;
+}
+.app-header .button.is-open-menu .ir {
+  background-color: #fff;
+  padding: 33px 28px;
+  background: url(../images/navigation-button.gif) no-repeat 50%;
+  display: inline-block;
+  cursor: pointer;
+  width: 26px;
+  height: 22px;
+  
+}
+
+
+/* 메인 */
+
+.app-main {
+color: #000;
+}
+
+
+/* 배경 디자인 */
+.brand {
 }
