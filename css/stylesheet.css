@@ -80,7 +80,10 @@
   top: 0;
   right: 0;
   left: 0;
-  border-bottom: 1px solid #f5f4fb
+  border-bottom: 1px solid #f5f4fb;
+  position: sticky;
+  top: 0;
+  z-index: 500;
   
 }
 
@@ -173,6 +176,7 @@ color: #000;
   background-color: #0b1228e6;
   color: #fff;
   position: fixed;
+  z-index: 1000px;
   top: 0;
   right: 0;
   width: 50%;
@@ -245,7 +249,10 @@ color: #000;
 
 .ediya-menu__item{
   width:100%;
+  min-width: 280px;
   background-color:#f5f5f5;
+  position: relative;
+
 }
 
 
@@ -278,13 +285,79 @@ color: #000;
   transform: scale(1);
 }
 
+/* 음료 상세 정보 */
+
+.ediya-menu__item--detail {
+  
+  background-color:rgba(204,204,204,0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 30px 20px;
+  border: 1px solid #202023;
+}
+
+.ediya-menu__item--name {
+  /* background: pink; */
+  margin: 0;
+  font-size: 1.8rem;
+  font-weight: 400;
+  border-bottom: 2px solid #202023;
+  padding-bottom: 10px;
+}
+.ediya-menu__item--name span[lang="en"]{
+  display: block;
+  color: #999999;
+  font-size: 1.4rem;
+}
+
+
+
+.ediya-menu__item--multi-column{
+  column-count: 2;
+  column-rule: 1px solid #000;
+  background-color: #eee;
+  padding: 20px 20px 10px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  
+}
+
+.ediya-menu__item--multi-column dl{
+  margin: 0;
+  font-size: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.ediya-menu__item--multi-column dt,
+.ediya-menu__item--multi-column dd{
+  
+  width: 50%;
+  margin: 0;
+  /* background-color:pink; */
+  font-size: 1.3rem;
+}
+.ediya-menu__item--detail .is-close-panel{
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: transparent;
+  padding: 10px;
+}
+
 @media all and (min-width:768px) {
   .ediya-menu{
-    width: 526px;
+    max-width: 1720px;
+    width: 89.84375%;
     justify-content: space-between;
   }
   .ediya-menu__item{
-    width: 248px;
+    width: 47.826087%;
   }
 
   .ediya-menu__item:nth-child(2) {
