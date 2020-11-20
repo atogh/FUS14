@@ -219,3 +219,28 @@ color: #000;
 .app-navigation a:focus {
   background: #2e437c;
 }
+
+/* 메뉴 디자인 */
+
+.app-main{
+  /* background-color: yellow; */
+}
+
+.ediya-menu figure{
+  /* width: 200px;
+  background-color: lime; */
+}
+
+.ediya-menu img{
+  /* border:  1px solid red; */
+  max-width: 100%;
+  height: auto;
+}
+
+@media all and (min-width:768px){
+  /* .app-main {
+    background-color:pink;
+    margin-left: auto;
+    margin-right: auto; */
+  }
+}
